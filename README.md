@@ -6,6 +6,10 @@
 - Implement an image classification system using HOG and SVM.
 - The system is expected to have a high accuracy (compared to sklearn and skimage), and consume less time than sklearn and skimage.
 - The system must have the accuracy higher than CNN which small dataset (we use <=6000 images in our dataset)
+#### Constributors:
+- Do Le Khanh Dang
+- Nguyen Dac Thang
+- Luc Minh Buu (me)
 
 # Project structure
 - **root/*_detai.ipynb**: Files containing detailed information about the implementation of algorithms from scratch (both sequential and parallel implementations).
