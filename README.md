@@ -5,7 +5,7 @@
 #### Goals:
 - Implement an image classification system using HOG and SVM.
 - The system is expected to have a high accuracy (compared to sklearn and skimage), and consume less time than sklearn and skimage.
-- The system must have the accuracy higher than CNN which small dataset (we use <=6000 images in our dataset)
+- The system is expected to have the accuracy higher than CNN which small dataset (we use <=6000 images in our dataset)
 #### Constributors:
 - Do Le Khanh Dang
 - Nguyen Dac Thang
@@ -20,13 +20,13 @@
 # Algorithms
 ## HOG:
 
-We use HOG to extract image features as it helps SVM work better.
+We will use HOG to extract image features as it helps SVM work better.
 
 The input of SVM will be HOG feature vectors instead of raw images.
 
 We implement the simplest variant of HOG, so our output will be different from OpenCV or skimage.
 
-Our HOG implementation mainly follow: https://www.analyticsvidhya.com/blog/2019/09/feature-engineering-images-introduction-hog-feature-descriptor/
+Our HOG implementation mainly follows: https://www.analyticsvidhya.com/blog/2019/09/feature-engineering-images-introduction-hog-feature-descriptor/
 
 and 
 
@@ -36,11 +36,11 @@ https://viblo.asia/p/tim-hieu-ve-phuong-phap-mo-ta-dac-trung-hog-histogram-of-or
 
 This is an algorithm performing the classification task. The input is vectors of image features, and the output is whether -1 (dog) or 1 (cat)
 
-There are 2 SVM implementation in our project. 
+There are 2 SVM implementations in our project. 
 
 First we implemented SVM without any kernel (as known as linear kernel) and optimized by gradient descent. But the accuracy seems to be low as the images relationship is not linear.
 
-Then we implement SVM using SMO (Sequential Minimal Optimization) to optimize. We create 2 kernel option for this implementation is linear and RBF. This implementation have the accuracy same as sklearn module.
+Then we implemented SVM using SMO (Sequential Minimal Optimization) to optimize. We create 2 kernel option for this implementation is linear and RBF. This implementation have the accuracy same as sklearn module.
 
 SMO is an algorithm used for training support vector machines. It helps optimize the SVM model by solving a series of small quadratic programming problems
 
