@@ -12,7 +12,7 @@
 - Luc Minh Buu (me)
 
 # Project structure
-- **root/*_detai.ipynb**: Files containing detailed information about the implementation of algorithms from scratch (both sequential and parallel implementations).
+- **root/*_detail.ipynb**: Files containing detailed information about the implementation of algorithms from scratch (both sequential and parallel implementations).
 - **root/demo_and_comparisons/*.py**: Files used for saving algorithm classes and some functions that is frequently used in our comparions.
 - **root/demo_and_comparisons/*.ipynb**: Comparisons of running time and accuracy between HOG + SVM implementations, HOG + SVM and CNN.
 - **root/demo_and_comparisons/demo_images**: Images that you can try in our **root/demo_and_comparisons/demo.ipynb** file
